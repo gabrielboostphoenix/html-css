@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes CSS</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         #sigla {
             text-decoration: none;
         }
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
             /*
             Medidas Absolutas:
             cm - centímetro (impressão, papel)
@@ -27,8 +28,24 @@
             rem - medida relativa ao tamanho atual da fonte (altura maiúscula da fonte) do root da página (por exemplo, as tags <html></html> ou as tags <body></body>)
             vw (view width) (largura da vizualização) - medida relativa à largura da janela de vizualização
             vh (view height) (altura da vizualização) - medida relativa à altura da janela de vizualização
+            % porcentagem
             */
             font-size: 1em;
+        }
+        h1 {
+            /* shorthand font
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: italic bolder 2em 'Work Sans', sans-serif;
         }
     </style>
 </head>
